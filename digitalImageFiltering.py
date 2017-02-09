@@ -1,3 +1,4 @@
+#Link to github https://github.com/abrahamleyva/digitalImageFiltering
 from PIL import Image #Import Pillow Library
 import os.path #Library for finiding number of fliles in a directory
 
@@ -32,7 +33,7 @@ finalB = 0;
 imgArr[1].save("images/final.png") #Creats a copy of the first image
 newImg = Image.open("images/final.png") #Opens and saves the new raw image
 finalPix = newImg.load() #Makes the new image able to be processes
-pixArr = [None] * num_files #Defines an array of images that can be processed
+pixArr = [None] * num_files #Defines an empty array of images that can be processed
 
 for i in range(0, num_files):
     pixArr[i] = imgArr[i].load() #Sets the processable images to pixArr

@@ -1,0 +1,1 @@
+This program takes in mutliple images shot at the same angle. If there are any differences in the images the pixels relating to those differences are replaced with the pixels from the other images through a median calculation of all the given pixels from the multiple images.
