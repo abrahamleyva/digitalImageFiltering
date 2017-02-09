@@ -1,3 +1,4 @@
+#Author: Abraham Medina
 #Link to github https://github.com/abrahamleyva/digitalImageFiltering
 from PIL import Image #Import Pillow Library
 import os.path #Library for finiding number of fliles in a directory
