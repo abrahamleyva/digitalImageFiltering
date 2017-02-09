@@ -36,6 +36,8 @@ newImg = Image.open("images/final.png") #Opens and saves the new raw image
 finalPix = newImg.load() #Makes the new image able to be processes
 pixArr = [None] * num_files #Defines an empty array of images that can be processed
 
+print("Processing...")
+
 for i in range(0, num_files):
     pixArr[i] = imgArr[i].load() #Sets the processable images to pixArr
 
@@ -51,3 +53,4 @@ for y in range(0, height): #Goes through vertical pixels
         
         finalPix[x, y] = (finalR, finalG, finalB) #Sets the median RGB values to the pixel of the final image
 newImg.save("images/final.png") #Saves the final image
+print("Complete!")
